@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
-import Image from 'next/image';
-import { personalInfo, education, experiences,skills,projects, } from '@/data/portfolio';
+import Image from 'next/image'
+import { personalInfo, education, experiences,skills,} from '@/data/portfolio';
 import { 
   GraduationCap, 
   Briefcase, 
