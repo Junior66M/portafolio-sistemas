@@ -16,7 +16,7 @@ export interface Skill {
   icon?: string;
 }
 export interface Proyectos {
-  name: string;
+  name: string;  
   level: number;
   category: 'frontend' | 'backend' | 'database' | 'tools' | 'other';
   icon?: string;}
