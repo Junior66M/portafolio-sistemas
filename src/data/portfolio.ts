@@ -1,17 +1,17 @@
 import { PersonalInfo, Project, Skill, Experience, Education } from "@/types";
 
 export const personalInfo: PersonalInfo = {
-  name: "Tu Nombre",
+  name: "Junior Mariños",
   title: "Estudiante de Ingeniería de Sistemas",
   description: "Apasionado por la tecnología y el desarrollo de software. Especializado en desarrollo web full-stack con experiencia en React, Node.js y bases de datos. Siempre buscando nuevos desafíos y oportunidades para crecer profesionalmente.",
-  image: "/profile-placeholder.jpg",
+  image: "https://i.blogs.es/50a1c5/t4yxpvu/840_560.jpeg",
   resume: "/resume.pdf",
   contact: {
-    email: "tu.email@ejemplo.com",
-    phone: "+57 300 123 4567",
-    location: "Bogotá, Colombia",
+    email: "marinosjunior@ejemplo.com",
+    phone: "963784744",
+    location: "Chimbote, Peru",
     social: {
-      github: "https://github.com/tuusuario",
+      github: "https://github.com/Junior66M",
       linkedin: "https://linkedin.com/in/tuusuario",
       twitter: "https://twitter.com/tuusuario"
     }
@@ -146,16 +146,16 @@ export const education: Education[] = [
   {
     id: "1",
     degree: "Ingeniería de Sistemas",
-    institution: "Universidad Nacional de Colombia",
-    period: "2021 - 2025",
+    institution: "Universidad Tercnologica del Peru",
+    period: "2022 - 2028",
     description: "Enfoque en desarrollo de software, bases de datos y arquitectura de sistemas. Participación activa en proyectos de investigación y desarrollo.",
     gpa: "4.2/5.0"
   },
   {
     id: "2",
     degree: "Técnico en Programación",
-    institution: "SENA",
-    period: "2020 - 2021",
+    institution: "UTP",
+    period: "2022 - 2028",
     description: "Formación técnica en programación con énfasis en desarrollo web y bases de datos.",
     gpa: "4.5/5.0"
   }
