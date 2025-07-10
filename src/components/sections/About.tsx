@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import Image from 'next/image';
-import { personalInfo, education, experiences } from '@/data/portfolio';
+import { personalInfo, education, experiences,skills,projects, } from '@/data/portfolio';
 import { 
   GraduationCap, 
   Briefcase, 
@@ -197,7 +197,7 @@ export const About = () => {
                   Educación
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Mi formación académica
+                  Mi Formación Académica
                 </p>
               </div>
             </div>
@@ -253,6 +253,49 @@ export const About = () => {
             </div>
           </motion.div>
 
+          {/* Skills-Habilidades Section */}
+          <motion.div variants={itemVariants} className="space-y-8">
+            <div className="flex items-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+              <Trophy className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Habilidades
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Tecnologias Dominadas
+                </p>
+              </div>
+            </div>
+
+            {/* Skills*/}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={index} 
+                  variants={cardVariants} 
+                  custom={index}
+                  className="bg-white dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center text-center shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow transform hover:-translate-y-1"
+                >
+                  {skill.icon && (
+                    <span className="text-3xl mb-2">{skill.icon}</span> 
+                  )}
+                  <p className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+                    {skill.name}
+                  </p>
+                  <span className="text-sm text-gray-600 dark:text-gray-400">
+                    Nivel: {skill.level}%
+                  </span>
+                  
+                  {<span className="text-xs text-gray-500 dark:text-gray-500 mt-1">
+                    {skill.category}
+                  </span> }
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+         
           {/* Experience Section */}
           <motion.div variants={itemVariants} className="space-y-8">
             <div className="flex items-center">
@@ -264,10 +307,11 @@ export const About = () => {
                   Experiencia
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Mi trayectoria profesional
+                  Mi Trayectoria Profesional
                 </p>
               </div>
             </div>
+            
 
             <div className="relative">
               {/* Timeline line */}

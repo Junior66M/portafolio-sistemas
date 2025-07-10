@@ -5,7 +5,8 @@ import { Github, Linkedin, Mail, Heart, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { useScrollTo } from '@/hooks/useScrollTo';
-import { personalInfo } from '@/data/portfolio';
+import { personalInfo , skills } from '@/data/portfolio';
+
 
 export const Footer = () => {
   const { scrollToSection } = useScrollTo();
@@ -19,6 +20,7 @@ export const Footer = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Info Personal */}
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

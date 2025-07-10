@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { useScrollTo } from '@/hooks/useScrollTo';
 import { personalInfo } from '@/data/portfolio';
+import Image from 'next/image';
 
 export const Hero = () => {
   const { scrollToSection } = useScrollTo();
@@ -213,7 +214,13 @@ export const Hero = () => {
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                   <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 flex items-center justify-center">
                     <div className="text-6xl md:text-7xl lg:text-8xl font-bold text-blue-600 dark:text-blue-400">
-                      {personalInfo.name.charAt(0)}
+                      {/*imagen Perfil Grande*/
+                        <Image
+                    src="https://i.pinimg.com/736x/4a/55/16/4a551660ef02bc379ba989b22b26ebde.jpg"
+                    alt={personalInfo.name}
+                    layout="fill"
+                    objectFit="cover"
+                  />}
                     </div>
                   </div>
                 </div>

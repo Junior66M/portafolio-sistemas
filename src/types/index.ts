@@ -15,6 +15,11 @@ export interface Skill {
   category: 'frontend' | 'backend' | 'database' | 'tools' | 'other';
   icon?: string;
 }
+export interface Proyectos {
+  name: string;
+  level: number;
+  category: 'frontend' | 'backend' | 'database' | 'tools' | 'other';
+  icon?: string;}
 
 export interface Experience {
   id: string;

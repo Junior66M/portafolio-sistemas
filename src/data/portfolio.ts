@@ -9,7 +9,7 @@ export const personalInfo: PersonalInfo = {
   contact: {
     email: "marinosjunior@ejemplo.com",
     phone: "963784744",
-    location: "Chimbote, Peru",
+    location: "Ancahs,Coishco,Peru",
     social: {
       github: "https://github.com/Junior66M",
       linkedin: "https://linkedin.com/in/tuusuario",
@@ -120,7 +120,7 @@ export const experiences: Experience[] = [
     id: "1",
     position: "Desarrollador Frontend Junior",
     company: "Tech Solutions SAS",
-    period: "Ene 2024 - Presente",
+    period: "Ene 2025 - Presente",
     description: "Desarrollo de interfaces web responsive usando React y TypeScript. Colaboración en equipo ágil para implementar nuevas funcionalidades y optimizar el rendimiento de aplicaciones web.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Git"]
   },
@@ -128,7 +128,7 @@ export const experiences: Experience[] = [
     id: "2",
     position: "Práctica Profesional",
     company: "Innovate Digital",
-    period: "Jun 2023 - Dic 2023",
+    period: "Jun 2023 - Dic 2024",
     description: "Desarrollo de aplicaciones web y móviles. Participación en proyectos de desarrollo full-stack y mantenimiento de sistemas existentes.",
     technologies: ["JavaScript", "Node.js", "MongoDB", "React Native"]
   },
@@ -136,7 +136,7 @@ export const experiences: Experience[] = [
     id: "3",
     position: "Desarrollador Freelance",
     company: "Independiente",
-    period: "2022 - 2023",
+    period: "2022 - 2025",
     description: "Desarrollo de sitios web y aplicaciones para pequeñas empresas. Gestión completa de proyectos desde el diseño hasta el deployment.",
     technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL", "WordPress"]
   }
