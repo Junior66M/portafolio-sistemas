@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Heart, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { useScrollTo } from '@/hooks/useScrollTo';
-import { personalInfo , skills } from '@/data/portfolio';
+import { personalInfo  } from '@/data/portfolio';
 
 
 export const Footer = () => {
