@@ -8,7 +8,7 @@ import { Container } from '@/components/ui/Container';
 import { useScrollTo } from '@/hooks/useScrollTo';
 import { NAVIGATION_ITEMS } from '@/constants';
 import { personalInfo } from '@/data/portfolio';
-import Image from 'next/image';
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +28,7 @@ export const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const menuVariants = {
+  const menuVariants ={
     open: {
       opacity: 1,
       x: 0,
@@ -76,13 +76,7 @@ export const Header = () => {
     >
       <Container>
         <nav className="flex h-16 items-center justify-between">
-          {<Image
-                    src="https://i.pinimg.com/736x/4a/55/16/4a551660ef02bc379ba989b22b26ebde.jpg"
-                    alt={personalInfo.name}
-                    layout="fill"
-                    objectFit="cover"
-                  />}
-          
+
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
